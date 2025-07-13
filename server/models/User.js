@@ -21,6 +21,11 @@ const userSchema = new mongoose.Schema(
       min: 1,
       max: 120,
     },
+    password: {
+      type: String,
+      required: true,
+      minlength: 6, // Minimum length for password
+    },
   },
   {
     timestamps: true, // adds createdAt and updatedAt

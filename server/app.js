@@ -4,6 +4,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import { dbConnect } from "./config/db.js";
+import bcrypt from "bcrypt"
 
 import userRouter from "./controllers/users.js";
 // import postRouter from "./controllers/posts.js"; // (optional, for future extension)
@@ -34,3 +35,4 @@ app.listen(PORT, () => {
   dbConnect(); // Connect to MongoDB
   console.log(`[server]: Listening on port ${PORT}`);
 });
+

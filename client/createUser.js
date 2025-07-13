@@ -23,11 +23,13 @@ userForm.addEventListener("submit", function (e) {
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const age = parseInt(document.getElementById("age").value);
+  const password = document.getElementById("password").value;
 
   const userData = {
     name: name,
     email: email,
-    age: age
+    age: age,
+    password  
   };
 
   console.log(userData); // You can now send this to an API
@@ -60,7 +62,7 @@ function createUser(userData) {
       // Show success message
       resultDiv.innerHTML = `
         <h3>User Created Successfully!</h3>
-        <p><strong>ID:</strong> ${user.id}</p>
+        <p><strong>ID:</strong> ${user._id}</p>
         <p><strong>Name:</strong> ${user.name}</p>
         <p><strong>Email:</strong> ${user.email}</p>
         <p><strong>Age:</strong> ${user.age}</p>
