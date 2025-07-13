@@ -14,7 +14,7 @@ It also includes a simple **HTML/CSS/JavaScript frontend** to interact with the 
 5. Frontend form handling using HTML/CSS/JavaScript
 6. RESTful API built with Express and MongoDB
 7. Environment variable support via `.env` file
-
+8. Password encryption
 ---
 
 ## ⚙️ Tech Stack
